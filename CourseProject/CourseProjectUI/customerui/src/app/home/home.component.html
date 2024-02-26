@@ -1,0 +1,33 @@
+<h1>Welcome To The Happy Shopper App</h1>
+<br>
+<h4>Search for customers by phone number:</h4>
+<input type="search" id="query" name="q" placeholder="Search Customers...">
+<button type="button" class="btn btn-info" [routerLink]="['/bynumber', customer.phoneNumber]">Search</button>
+<h4>Search for customers by last name:</h4>
+<input type="search" id="query" name="q" placeholder="Search Customers...">
+<button type="button" class="btn btn-info" [routerLink]="['/byname', customer.lastName]">Search</button>
+<h3>Your are now viewing all customers:</h3>
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Zip Code</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <th scope="row">{{ customer.id }}</th>
+        <td>{{ customer.firstName }}</td>
+        <td>{{ customer.lastName }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.phoneNumber }}</td>
+        <td>{{ customer.zipcode }}</td>
+        <td><button type="button" class="btn btn-info" [routerLink]="['/customers', customer.id]">View</button></td>
+      </tr>
+    </tbody>
+</table>

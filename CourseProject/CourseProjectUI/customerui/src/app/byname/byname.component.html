@@ -1,0 +1,24 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Zip Code</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <th scope="row">{{ customer.id }}</th>
+        <td>{{ customer.firstName }}</td>
+        <td>{{ customer.lastName }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.phoneNumber }}</td>
+        <td>{{ customer.zipcode }}</td>
+        <td><button type="button" class="btn btn-info" [routerLink]="['/customers', customer.id]">View</button></td>
+      </tr>
+    </tbody>
+</table>

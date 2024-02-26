@@ -1,0 +1,36 @@
+<h2>Add an account:</h2>
+<form class="form">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input #firstName type="text" class="form-control input" id="firstName">
+    </div>
+    <div class="form-group">
+       <label for="lastName">Last Name</label>
+      <input #lastName type="text" class="form-control input" id="lastName">
+    </div>
+    <div class="form-group">
+        <label for="address">Address</label>
+       <input #address type="text" class="form-control input" id="address">
+     </div>
+     <div class="form-group">
+        <label for="city">City</label>
+       <input #city type="text" class="form-control input" id="city">
+     </div>
+     <div class="form-group">
+        <label for="state">State</label>
+       <input #state type="text" class="form-control input" id="state">
+     </div>
+     <div class="form-group">
+        <label for="zipcode">Zip Code</label>
+       <input #zipcode type="number" class="form-control input" id="zipcode">
+     </div>
+     <div class="form-group">
+        <label for="email">Email</label>
+       <input #email type="text" class="form-control input" id="email">
+     </div>
+     <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+       <input #phoneNumber type="tel" class="form-control input" id="phoneNumber">
+     </div>
+    <button type="button" class="button btn btn-success" (click)="createCustomer(firstName.value, lastName.value, address.value, city.value, state.value, zipcode.value, email.value, phoneNumber.value)">Add</button>
+</form>

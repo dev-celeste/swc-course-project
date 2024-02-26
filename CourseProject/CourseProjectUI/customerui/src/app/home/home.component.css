@@ -1,0 +1,16 @@
+h1, h3 {
+    text-align: center;
+    font-family: 'Protest Riot';
+}
+h1 {
+    color: rgb(165, 165, 167);
+}
+
+.btn {
+    background-color: #67aef6;
+    font-family: 'Protest Riot';
+}
+
+.btn:hover {
+    background-color: #798ef4
+}

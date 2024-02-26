@@ -1,0 +1,18 @@
+.form {
+    margin: 2%;
+}
+
+.input {
+    width: 20%;
+    background-color: #d3e0f8;
+}
+
+.button {
+    margin-top: 1%;
+    font-family: 'Protest Riot';
+}
+
+h2 {
+    margin-left: 1%;
+    font-family: 'Protest Riot';
+}
